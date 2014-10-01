@@ -29,6 +29,7 @@
 <?php if(!$this->getDontDisplayContainer()): ?>
 
 <style>
+.messages{ width:283px;}
 
 .init_message{
 	border-style: solid !important;
@@ -36,15 +37,14 @@
     font-size: 11px !important;
     font-weight: bold !important;
 	text-align:center !important;
-    padding: 5px 0px 5px 0px !important;
+    padding: 5px 0px 7px 0px !important;
 	background-color: #faebe7;
     border-color: #f16048;
     color: #df280a;
-	margin: -58px 10px 10px !important;
-	width: 283px !important;
+	margin: -58px 10px 10px !important;	
 	position: absolute;
+	width: 283px;	
 	}
-
 </style>
 
 <ul class="init_message">
@@ -122,8 +122,8 @@ billing.onSave = function(evt){
 }
 //]]>	
 	
-jQuery(".postcode .input-text").blur(function(){
-	jQuery(".init_message").css("display", "none");	
+jQuery(".postcode .input-text").blur(function(){	
+	jQuery(".init_message").css("display", "none");		
 	});
 	
 </script>
